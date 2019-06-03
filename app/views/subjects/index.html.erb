@@ -1,2 +1,6 @@
-<h1>Subjects#index</h1>
-<p>Find me in app/views/subjects/index.html.erb</p>
+<h1>科目一覧</h1>
+<ul>
+    <% @subjects.each do |subject| %>
+        <li><%= link_to subject.title, subject_show_path(subject.id) %>
+    <% end %>
+</ul>
