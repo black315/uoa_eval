@@ -3,7 +3,7 @@ class CreateSubjects < ActiveRecord::Migration[5.2]
     create_table :subjects do |t|
       t.string :name
       t.string :instructor
-      t.int :rate
+      t.integer :rate
 
       t.timestamps
     end
