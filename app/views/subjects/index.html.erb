@@ -6,6 +6,6 @@
 </ul>
 <h1>科目新規登録</h1>
 <%= form_for @newSubject, :url => {:action => 'create'} do |f| %>
-    <%= f.text_field :name %>
-    <%= f.submit %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
 <% end %>
