@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'subjects/index'
   get 'subjects/show/:id' => 'subjects#show', as: :subjects_show
   post 'subjects/create' => 'subjects#create'
+  post 'posts/create' => 'post#create', as: :post_create
 end
