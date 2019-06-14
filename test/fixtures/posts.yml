@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: MyString
+  instructor: MyText
+  rate: MyString
+  period: 1
+  subject: one
+
+two:
+  content: MyString
+  instructor: MyText
+  rate: MyString
+  period: 1
+  subject: two
