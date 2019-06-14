@@ -5,6 +5,8 @@ class SubjectsController < ApplicationController
     end
 
     def show
+        @subject = Subject.find(params[:id])
+        @posts = Post.where(subject_id: params[:id])
     end
 
     def create

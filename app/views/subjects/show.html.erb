@@ -1,2 +1,9 @@
-<h1>Subjects#show</h1>
-<p>Find me in app/views/subjects/show.html.erb</p>
+<h1><%= @subject.name %></h1>
+<% @posts.each do |post| %>
+  <div>
+    <%= post.content %>
+  </div>
+  <div>
+    担当　<%= post.instructor %> : <%= post.period %>期 : 評価<%= post.rate %>
+  </div>
+<% end %>
