@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_05_192457) do
+ActiveRecord::Schema.define(version: 2019_06_14_071800) do
+
+  create_table "posts", force: :cascade do |t|
+    t.string "content"
+    t.text "instructor"
+    t.string "rate"
+    t.integer "period"
+    t.integer "subject_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["subject_id"], name: "index_posts_on_subject_id"
+  end
 
   create_table "subjects", force: :cascade do |t|
     t.string "name"
