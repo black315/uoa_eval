@@ -9,7 +9,7 @@
   <div>評価　<%= post.rate %></div>
 <% end %>
 <div>
-  <button id="new-post" class="waves-effect waves-teal btn-flat">投稿する</button>
+  <input type="button" id="new-post" class="waves-effect waves-teal btn-flat" value="投稿する" />
   <div class="new-post-form" style="display: none">
   <%= form_for @newPost, :url => post_create_path do |f| %>
     <label>内容</label>

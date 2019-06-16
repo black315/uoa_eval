@@ -22,6 +22,14 @@ $(function() {
     });
 
     $('#new-post').click(function() {
-        $('.new-post-form').toggle('slow');
+        const $newPostForm = $('.new-post-form');
+
+        if($newPostForm.is(':hidden')) {
+            $(this).val('キャンセル');
+        } else {
+            $(this).val('投稿する');
+        }
+
+        $newPostForm.toggle('slow');
     });
 });
