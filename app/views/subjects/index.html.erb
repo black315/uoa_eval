@@ -1,11 +1,15 @@
 <h1>科目一覧</h1>
 <ul>
   <% @subjects.each do |subject| %>
-    <li><%= link_to subject.name, subjects_show_path(subject.id) %>
+    <li><%= link_to subject.name, subjects_show_path(subject.id), data: {"turbolinks" => false} %>
   <% end %>
 </ul>
-<h1>科目新規登録</h1>
-<%= form_for @newSubject, :url => {:action => 'create'} do |f| %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
+<div>
+  <input type="button" id="new-subject" class="waves-effect waves-teal btn-flat" value="投稿する" />
+  <div class="new-subject-form" style="display: none">
+  <%= form_for @newSubject, :url => {:action => 'create'} do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "科目追加", :class => "waves-effect waves-light btn-small" %>
+  <% end %>
+  </div>
+</div>

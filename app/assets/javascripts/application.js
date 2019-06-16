@@ -21,15 +21,15 @@ $(function() {
         $('select').formSelect();
     });
 
-    $('#new-post').click(function() {
-        const $newPostForm = $('.new-post-form');
+    $('#new-subject, #new-post').click(function() {
+        const $newForm = $(this).parent().next();
 
-        if($newPostForm.is(':hidden')) {
+        if($newForm.is(':hidden')) {
             $(this).val('キャンセル');
         } else {
             $(this).val('投稿する');
         }
 
-        $newPostForm.toggle('slow');
+        $newForm.toggle('slow');
     });
 });
