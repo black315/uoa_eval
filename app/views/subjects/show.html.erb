@@ -4,18 +4,24 @@
   <div>
     <%= post.content %>
   </div>
-  <div>
-    担当　<%= post.instructor %> : <%= post.period %>期 : 評価<%= post.rate %>
-  </div>
+  <div>担当者　<%= post.instructor %></div>
+  <div>投稿者　<%= post.period %>期 </div>
+  <div>評価　<%= post.rate %></div>
 <% end %>
 <h3>新規投稿</h3>
 <%= form_for @newPost, :url => post_create_path do |f| %>
-  <p>内容</p>
-  <p><%= f.text_area :content %></p>
-  <p>担当</p>
-  <p><%= f.text_field :instructor %></p>
-  <p><%= f.select :period, [[27, 27], [26, 26], [25, 25], [24, 24], [23, 23]], :prompt => "選択してください" %>期</p>
-  <p>評価　<%= f.select :rate, [[5, 5], [4, 4], [3, 3], [2, 2], [1, 1]], :prompt => "選択してください" %></p>
+  <label>内容</label>
+  <%= f.text_area :content %>
+  <label>担当者</label>
+  <%= f.text_field :instructor %>
+  <div class="input-field col s12">
+    <%= f.select :period, [[27, 27], [26, 26], [25, 25], [24, 24], [23, 23]], :prompt => "選択してください" %>
+    <label>期</label>
+  </div>
+  <div class="input-field col s12">
+    <%= f.select :rate, [[5, 5], [4, 4], [3, 3], [2, 2], [1, 1]], :prompt => "選択してください" %>
+    <label>評価</label>
+  </div>
   <%= f.hidden_field :subject_id %>
   <%= f.submit %>
 <% end %>
