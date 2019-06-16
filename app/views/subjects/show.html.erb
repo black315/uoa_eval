@@ -8,21 +8,25 @@
   <div>投稿者　<%= post.period %>期 </div>
   <div>評価　<%= post.rate %></div>
 <% end %>
-<h3>新規投稿</h3>
-<%= form_for @newPost, :url => post_create_path do |f| %>
-  <label>内容</label>
-  <%= f.text_area :content %>
-  <label>担当者</label>
-  <%= f.text_field :instructor %>
-  <div class="input-field col s12">
-    <%= f.select :period, [[27, 27], [26, 26], [25, 25], [24, 24], [23, 23]], :prompt => "選択してください" %>
-    <label>期</label>
+<div>
+  <button id="new-post" class="waves-effect waves-teal btn-flat">投稿する</button>
+  <div class="new-post-form" style="display: none">
+  <%= form_for @newPost, :url => post_create_path do |f| %>
+    <label>内容</label>
+    <%= f.text_area :content %>
+    <label>担当者</label>
+    <%= f.text_field :instructor %>
+    <div class="input-field col s12">
+      <%= f.select :period, [[27, 27], [26, 26], [25, 25], [24, 24], [23, 23]], :prompt => "選択してください" %>
+      <label>期</label>
+    </div>
+    <div class="input-field col s12">
+      <%= f.select :rate, [[5, 5], [4, 4], [3, 3], [2, 2], [1, 1]], :prompt => "選択してください" %>
+      <label>評価</label>
+    </div>
+    <%= f.hidden_field :subject_id %>
+    <%= f.submit %>
+  <% end %>
   </div>
-  <div class="input-field col s12">
-    <%= f.select :rate, [[5, 5], [4, 4], [3, 3], [2, 2], [1, 1]], :prompt => "選択してください" %>
-    <label>評価</label>
-  </div>
-  <%= f.hidden_field :subject_id %>
-  <%= f.submit %>
-<% end %>
+</div>
 <%= link_to "科目一覧に戻る", subjects_index_path %>

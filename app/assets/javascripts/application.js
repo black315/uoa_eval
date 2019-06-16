@@ -16,6 +16,12 @@
 //= require_tree .
 //= require jquery
 //= require materialize
-$(document).ready(function(){
-    $('select').formSelect();
+$(function() {
+    $(document).ready(function () {
+        $('select').formSelect();
+    });
+
+    $('#new-post').click(function() {
+        $('.new-post-form').toggle('slow');
+    });
 });
