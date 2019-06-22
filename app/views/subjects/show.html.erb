@@ -8,7 +8,7 @@
   <div>評価　<%= post.rate %></div>
 <% end %>
 <div>
-  <input type="button" id="new-post" class="waves-effect waves-teal btn-flat" value="投稿する" />
+  <input type="button" id="new-post" class="waves-effect waves-light btn light-blue lighten-2"" value="投稿する" />
   <div class="new-post-form" style="display: none">
   <%= form_for @newPost, :url => post_create_path do |f| %>
     <label>内容</label>
@@ -24,7 +24,7 @@
       <label>評価</label>
     </div>
     <%= f.hidden_field :subject_id %>
-    <%= f.submit "投稿", :class => "waves-effect waves-light btn-small" %>
+    <%= f.submit "投稿", :class => "waves-effect waves-light btn light-blue lighten-2" %>
   <% end %>
   </div>
 </div>
