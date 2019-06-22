@@ -1,5 +1,4 @@
 <h1><%= @subject.name %></h1>
-<%= link_to "科目一覧に戻る", subjects_index_path, data: {"turbolinks" => false} %>
 <% @posts.each do |post| %>
   <div>
     <%= post.content %>
