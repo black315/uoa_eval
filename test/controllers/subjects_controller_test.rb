@@ -7,7 +7,7 @@ class SubjectsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get show" do
-    get subjects_show_url
+    get subjects_show_url(1)
     assert_response :success
   end
 
