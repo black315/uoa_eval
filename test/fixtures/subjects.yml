@@ -2,9 +2,10 @@
 
 one:
   id: 1
-  name: MyString
-  rate:
+  name: subject1
+  rate: 5
 
 two:
-  name: MyString
-  rate:
+  id: 2
+  name: subject2
+  rate: 3
