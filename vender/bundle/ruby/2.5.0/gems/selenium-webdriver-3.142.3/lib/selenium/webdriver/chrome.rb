@@ -51,4 +51,4 @@ module Selenium
   end # WebDriver
 end # Selenium
 
-require 'selenium/webdriver/chrome/service'
+require 'selenium/webdriver/chrome/services'

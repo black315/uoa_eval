@@ -63,4 +63,4 @@ module Selenium
   end # WebDriver
 end # Selenium
 
-require 'selenium/webdriver/firefox/service'
+require 'selenium/webdriver/firefox/services'

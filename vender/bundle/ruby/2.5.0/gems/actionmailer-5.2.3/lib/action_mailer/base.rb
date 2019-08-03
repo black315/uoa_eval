@@ -99,7 +99,7 @@ module ActionMailer
   # Emails by default are sent in plain text, so a sample view for our model example might look like this:
   #
   #   Hi <%= @account.name %>,
-  #   Thanks for joining our service! Please check back often.
+  #   Thanks for joining our services! Please check back often.
   #
   # You can even use Action View helpers in these views. For example:
   #

@@ -169,7 +169,7 @@ module Rack
       end
 
       # ID sets up a basic framework for implementing an id based sessioning
-      # service. Cookies sent to the client for maintaining sessions will only
+      # services. Cookies sent to the client for maintaining sessions will only
       # contain an id reference. Only #find_session and #write_session are
       # required to be overwritten.
       #

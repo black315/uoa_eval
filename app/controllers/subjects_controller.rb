@@ -8,6 +8,7 @@ class SubjectsController < ApplicationController
     @subject = Subject.find(params[:id])
     @newPost = Post.new(:subject_id => params[:id])
     @posts = Post.where(subject_id: params[:id])
+    @periodList = SubjectsService.getPeriodList()
   end
 
   def create

@@ -16,13 +16,13 @@ class ActiveStorage::Attachment < ActiveRecord::Base
 
   after_create_commit :analyze_blob_later, :identify_blob
 
-  # Synchronously purges the blob (deletes it from the configured service) and destroys the attachment.
+  # Synchronously purges the blob (deletes it from the configured services) and destroys the attachment.
   def purge
     destroy
     blob.purge
   end
 
-  # Destroys the attachment and asynchronously purges the blob (deletes it from the configured service).
+  # Destroys the attachment and asynchronously purges the blob (deletes it from the configured services).
   def purge_later
     destroy
     blob.purge_later

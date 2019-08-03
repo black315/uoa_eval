@@ -46,7 +46,7 @@ module ActiveStorage
       end
 
       def log_prefix_for_service(event)
-        color "  #{event.payload[:service]} Storage (#{event.duration.round(1)}ms) ", CYAN
+        color "  #{event.payload[:services]} Storage (#{event.duration.round(1)}ms) ", CYAN
       end
 
       def key_in(event)

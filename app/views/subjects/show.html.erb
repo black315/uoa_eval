@@ -16,7 +16,7 @@
     <label>担当者</label>
     <%= f.text_field :instructor %>
     <div class="input-field col s12">
-      <%= f.select :period, [[27, 27], [26, 26], [25, 25], [24, 24], [23, 23]], :prompt => "選択してください" %>
+      <%= f.select :period, @periodList.map { |period| [period, period] }, :prompt => "選択してください" %>
       <label>期</label>
     </div>
     <div class="input-field col s12">
