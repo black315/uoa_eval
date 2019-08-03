@@ -74,7 +74,7 @@ module ActiveModel
 
     module HelperMethods
       # Encapsulates the pattern of wanting to validate the acceptance of a
-      # terms of service check box (or similar agreement).
+      # terms of services check box (or similar agreement).
       #
       #   class Person < ActiveRecord::Base
       #     validates_acceptance_of :terms_of_service

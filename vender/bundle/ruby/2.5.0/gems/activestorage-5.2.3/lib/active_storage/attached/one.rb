@@ -53,7 +53,7 @@ module ActiveStorage
     end
 
     # Directly purges the attachment (i.e. destroys the blob and
-    # attachment and deletes the file on the service).
+    # attachment and deletes the file on the services).
     def purge
       if attached?
         attachment.purge

@@ -59,7 +59,7 @@ module ActionCable
       end
 
       # The worker pool is where we run connection callbacks and channel actions. We do as little as possible on the server's main thread.
-      # The worker pool is an executor service that's backed by a pool of threads working from a task queue. The thread pool size maxes out
+      # The worker pool is an executor services that's backed by a pool of threads working from a task queue. The thread pool size maxes out
       # at 4 worker threads by default. Tune the size yourself with <tt>config.action_cable.worker_pool_size</tt>.
       #
       # Using Active Record, Redis, etc within your channel actions means you'll get a separate connection from each thread in the worker pool.

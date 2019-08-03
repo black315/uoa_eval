@@ -20,7 +20,7 @@
 module Selenium
   module WebDriver
     #
-    # Base class implementing default behavior of service object,
+    # Base class implementing default behavior of services object,
     # responsible for starting and stopping driver implementations.
     #
 

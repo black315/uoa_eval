@@ -52,7 +52,7 @@ class ActiveStorage::Preview
     blob.preview_image
   end
 
-  # Returns the URL of the preview's variant on the service. Raises ActiveStorage::Preview::UnprocessedError if the
+  # Returns the URL of the preview's variant on the services. Raises ActiveStorage::Preview::UnprocessedError if the
   # preview has not been processed yet.
   #
   # This method synchronously processes a variant of the preview image, so do not call it in views. Instead, generate

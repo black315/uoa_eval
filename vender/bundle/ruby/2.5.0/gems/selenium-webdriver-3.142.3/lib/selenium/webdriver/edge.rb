@@ -41,4 +41,4 @@ module Selenium
   end # WebDriver
 end # Selenium
 
-require 'selenium/webdriver/edge/service'
+require 'selenium/webdriver/edge/services'

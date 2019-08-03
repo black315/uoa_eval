@@ -2,10 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ded30d57-8f4e-464b-a0e0-93c3bdef4603" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/subjects/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/subjects/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/subjects_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/subjects/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/subjects/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/storage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actioncable-5.2.3/lib/action_cable/server/base.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actioncable-5.2.3/lib/action_cable/server/base.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionmailer-5.2.3/lib/action_mailer/base.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionmailer-5.2.3/lib/action_mailer/base.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/http_authentication.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/mime_responds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/actionpack-5.2.3/lib/action_controller/metal/mime_responds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activejob-5.2.3/lib/active_job/exceptions.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activejob-5.2.3/lib/active_job/exceptions.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activejob-5.2.3/lib/active_job/queue_adapters/sucker_punch_adapter.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activejob-5.2.3/lib/active_job/queue_adapters/sucker_punch_adapter.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activemodel-5.2.3/lib/active_model/validations/acceptance.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activemodel-5.2.3/lib/active_model/validations/acceptance.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/blobs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/blobs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/direct_uploads_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/direct_uploads_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/disk_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/disk_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/representations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/controllers/active_storage/representations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/attachment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/attachment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/blob.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/blob.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/blob/representable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/blob/representable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/preview.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/preview.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/variant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/app/models/active_storage/variant.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/attached/many.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/attached/many.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/attached/one.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/attached/one.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/engine.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/engine.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/log_subscriber.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/log_subscriber.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/azure_storage_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/azure_storage_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/configurator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/configurator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/disk_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/disk_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/gcs_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/gcs_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/mirror_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/mirror_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/s3_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/activestorage-5.2.3/lib/active_storage/service/s3_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/immediate_executor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/immediate_executor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/indirect_immediate_executor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/indirect_immediate_executor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/simple_executor_service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/concurrent-ruby-1.1.5/lib/concurrent/executor/simple_executor_service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/mail-2.7.1/lib/mail/fields/return_path_field.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/mail-2.7.1/lib/mail/fields/return_path_field.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/mimemagic-0.3.3/lib/mimemagic/tables.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/mimemagic-0.3.3/lib/mimemagic/tables.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/rack-2.0.7/lib/rack/session/abstract/id.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/chrome.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/chrome.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common/driver.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common/driver.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common/service.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/common/service.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/edge.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/edge.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/firefox.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/firefox.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/ie.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/ie.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/safari.rb" beforeDir="false" afterPath="$PROJECT_DIR$/vender/bundle/ruby/2.5.0/gems/selenium-webdriver-3.142.3/lib/selenium/webdriver/safari.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,28 +59,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+        <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state relative-caret-position="220">
+              <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/services/subjects_service.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/subjects/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+            <state relative-caret-position="255">
+              <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
               <folding>
                 <element signature="e#367#388#0#HTML" expanded="true" />
               </folding>
@@ -46,6 +89,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Ruby File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +107,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20190603063301_create_subjects.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/post_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/matelpage.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/subjects.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
@@ -68,7 +117,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/subjects/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/services/subjects_service.rb" />
       </list>
     </option>
   </component>
@@ -110,14 +161,19 @@
               <item name="uoa_eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="uoa_eval" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uoa_eval" type="b2602c69:ProjectViewProjectNode" />
               <item name="uoa_eval" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="uoa_eval" type="b2602c69:ProjectViewProjectNode" />
+              <item name="uoa_eval" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="uoa_eval" type="b2602c69:ProjectViewProjectNode" />
@@ -215,7 +271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26112000" />
+    <option name="totallyTimeSpent" value="28696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -315,13 +371,6 @@
     <entry file="file://$PROJECT_DIR$/test/controllers/post_controller_test.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/post_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/fixtures/subjects.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -343,20 +392,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -371,13 +406,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/post_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/subjects_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+        <state relative-caret-position="255">
+          <caret line="18" column="72" selection-start-line="18" selection-start-column="72" selection-end-line="18" selection-end-column="72" />
           <folding>
             <element signature="e#367#388#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/services/subjects_service.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>

@@ -3,10 +3,10 @@ require 'concurrent/executor/executor_service'
 
 module Concurrent
 
-  # An executor service in which every operation spawns a new,
+  # An executor services in which every operation spawns a new,
   # independently operating thread.
   #
-  # This is perhaps the most inefficient executor service in this
+  # This is perhaps the most inefficient executor services in this
   # library. It exists mainly for testing an debugging. Thread creation
   # and management is expensive in Ruby and this executor performs no
   # resource pooling. This can be very beneficial during testing and

@@ -4,7 +4,7 @@ require "abstract_controller/collector"
 
 module ActionController #:nodoc:
   module MimeResponds
-    # Without web-service support, an action which collects the data for displaying a list of people
+    # Without web-services support, an action which collects the data for displaying a list of people
     # might look something like this:
     #
     #   def index
@@ -18,7 +18,7 @@ module ActionController #:nodoc:
     #     respond_to :html, :js
     #   end
     #
-    # Here's the same action, with web-service support baked in:
+    # Here's the same action, with web-services support baked in:
     #
     #   def index
     #     @people = Person.all
@@ -44,7 +44,7 @@ module ActionController #:nodoc:
     #     redirect_to(person_list_url)
     #   end
     #
-    # Here's the same action, with web-service support baked in:
+    # Here's the same action, with web-services support baked in:
     #
     #   def create
     #     company  = params[:person].delete(:company)
@@ -78,7 +78,7 @@ module ActionController #:nodoc:
     #   company  = params[:person].delete(:company)
     #   @company = Company.find_or_create_by(name: company[:name])
     #
-    # This is because the incoming XML document (if a web-service request is in process) can only contain a
+    # This is because the incoming XML document (if a web-services request is in process) can only contain a
     # single root-node. So, we have to rearrange things so that the request looks like this (url-encoded):
     #
     #   person[name]=...&person[company][name]=...&...

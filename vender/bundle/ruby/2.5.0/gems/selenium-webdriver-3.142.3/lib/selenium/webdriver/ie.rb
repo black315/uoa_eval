@@ -38,4 +38,4 @@ module Selenium
   end # WebDriver
 end # Selenium
 
-require 'selenium/webdriver/ie/service'
+require 'selenium/webdriver/ie/services'

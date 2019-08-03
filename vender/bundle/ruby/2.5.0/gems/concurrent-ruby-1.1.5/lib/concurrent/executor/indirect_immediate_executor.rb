@@ -2,11 +2,11 @@ require 'concurrent/executor/immediate_executor'
 require 'concurrent/executor/simple_executor_service'
 
 module Concurrent
-  # An executor service which runs all operations on a new thread, blocking
+  # An executor services which runs all operations on a new thread, blocking
   # until it completes. Operations are performed in the order they are received
   # and no two operations can be performed simultaneously.
   #
-  # This executor service exists mainly for testing an debugging. When used it
+  # This executor services exists mainly for testing an debugging. When used it
   # immediately runs every `#post` operation on a new thread, blocking the
   # current thread until the operation is complete. This is similar to how the
   # ImmediateExecutor works, but the operation has the full stack of the new
