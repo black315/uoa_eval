@@ -62,4 +62,4 @@ module Selenium
   end # WebDriver
 end # Selenium
 
-require 'selenium/webdriver/safari/service'
+require 'selenium/webdriver/safari/services'

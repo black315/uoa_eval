@@ -1,0 +1,11 @@
+<h1>検索結果</h1>
+<ul>
+  <% @posts.each do |post| %>
+    <div>
+      <%= post.content %>
+    </div>
+    <div>担当者　<%= post.instructor %></div>
+    <div>投稿者　<%= post.period %>期 </div>
+    <div>評価　<%= post.rate %></div>
+  <% end %>
+</ul>

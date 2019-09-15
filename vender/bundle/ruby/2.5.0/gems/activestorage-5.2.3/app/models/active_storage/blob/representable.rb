@@ -13,7 +13,7 @@ module ActiveStorage::Blob::Representable
   #   avatar.variant(resize: "100x100").processed.service_url
   #
   # This will create and process a variant of the avatar blob that's constrained to a height and width of 100px.
-  # Then it'll upload said variant to the service according to a derivative key of the blob and the transformations.
+  # Then it'll upload said variant to the services according to a derivative key of the blob and the transformations.
   #
   # Frequently, though, you don't actually want to transform the variant right away. But rather simply refer to a
   # specific variant that can be created by a controller on-demand. Like so:

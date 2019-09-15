@@ -17,23 +17,23 @@ module ActiveStorage
   #
   # Inside a Rails application, you can set-up your services through the
   # generated <tt>config/storage.yml</tt> file and reference one
-  # of the aforementioned constant under the +service+ key. For example:
+  # of the aforementioned constant under the +services+ key. For example:
   #
   #   local:
-  #     service: Disk
+  #     services: Disk
   #     root: <%= Rails.root.join("storage") %>
   #
-  # You can checkout the service's constructor to know which keys are required.
+  # You can checkout the services's constructor to know which keys are required.
   #
-  # Then, in your application's configuration, you can specify the service to
+  # Then, in your application's configuration, you can specify the services to
   # use like this:
   #
-  #   config.active_storage.service = :local
+  #   config.active_storage.services = :local
   #
   # If you are using Active Storage outside of a Ruby on Rails application, you
-  # can configure the service to use like this:
+  # can configure the services to use like this:
   #
-  #   ActiveStorage::Blob.service = ActiveStorage::Service.configure(
+  #   ActiveStorage::Blob.services = ActiveStorage::Service.configure(
   #     :Disk,
   #     root: Pathname("/foo/bar/storage")
   #   )
@@ -44,9 +44,9 @@ module ActiveStorage
     class_attribute :url_expires_in, default: 5.minutes
 
     class << self
-      # Configure an Active Storage service by name from a set of configurations,
+      # Configure an Active Storage services by name from a set of configurations,
       # typically loaded from a YAML file. The Active Storage engine uses this
-      # to set the global Active Storage service when the app boots.
+      # to set the global Active Storage services when the app boots.
       def configure(service_name, configurations)
         Configurator.build(service_name, configurations)
       end
@@ -54,7 +54,7 @@ module ActiveStorage
       # Override in subclasses that stitch together multiple services and hence
       # need to build additional services using the configurator.
       #
-      # Passes the configurator and all of the service's config as keyword args.
+      # Passes the configurator and all of the services's config as keyword args.
       #
       # See MirrorService for an example.
       def build(configurator:, service: nil, **service_config) #:nodoc:
@@ -62,14 +62,14 @@ module ActiveStorage
       end
     end
 
-    # Upload the +io+ to the +key+ specified. If a +checksum+ is provided, the service will
+    # Upload the +io+ to the +key+ specified. If a +checksum+ is provided, the services will
     # ensure a match when the upload has completed or raise an ActiveStorage::IntegrityError.
     def upload(key, io, checksum: nil, **options)
       raise NotImplementedError
     end
 
-    # Update metadata for the file identified by +key+ in the service.
-    # Override in subclasses only if the service needs to store specific
+    # Update metadata for the file identified by +key+ in the services.
+    # Override in subclasses only if the services needs to store specific
     # metadata that has to be updated upon identification.
     def update_metadata(key, **metadata)
     end
@@ -109,7 +109,7 @@ module ActiveStorage
     # Returns a signed, temporary URL that a direct upload file can be PUT to on the +key+.
     # The URL will be valid for the amount of seconds specified in +expires_in+.
     # You must also provide the +content_type+, +content_length+, and +checksum+ of the file
-    # that will be uploaded. All these attributes will be validated by the service upon upload.
+    # that will be uploaded. All these attributes will be validated by the services upon upload.
     def url_for_direct_upload(key, expires_in:, content_type:, content_length:, checksum:)
       raise NotImplementedError
     end
@@ -122,8 +122,8 @@ module ActiveStorage
     private
       def instrument(operation, payload = {}, &block)
         ActiveSupport::Notifications.instrument(
-          "service_#{operation}.active_storage",
-          payload.merge(service: service_name), &block)
+            "service_#{operation}.active_storage",
+            payload.merge(services: service_name), &block)
       end
 
       def service_name

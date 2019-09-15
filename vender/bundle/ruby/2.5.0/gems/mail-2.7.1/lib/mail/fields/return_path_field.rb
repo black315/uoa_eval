@@ -4,7 +4,7 @@
 # 4.4.3.  REPLY-TO / RESENT-REPLY-TO
 # 
 #    Note:  The "Return-Path" field is added by the mail  transport
-#           service,  at the time of final deliver.  It is intended
+#           services,  at the time of final deliver.  It is intended
 #           to identify a path back to the orginator  of  the  mes-
 #           sage.   The  "Reply-To"  field  is added by the message
 #           originator and is intended to direct replies.

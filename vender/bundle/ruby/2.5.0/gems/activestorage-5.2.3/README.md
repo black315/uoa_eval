@@ -43,7 +43,7 @@ user.avatar.purge_later
 user.avatar.attached? # => false
 
 # Generate a permanent URL for the blob that points to the application.
-# Upon access, a redirect to the actual service endpoint is returned.
+services
 # This indirection decouples the public URL from the actual one, and
 # allows for example mirroring attachments in different services for
 # high-availability. The redirection has an HTTP expiration of 5 min.

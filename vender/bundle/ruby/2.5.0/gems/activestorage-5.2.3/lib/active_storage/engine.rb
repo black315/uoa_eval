@@ -103,7 +103,7 @@ module ActiveStorage
             begin
               ActiveStorage::Service.configure config_choice, configs
             rescue => e
-              raise e, "Cannot load `Rails.config.active_storage.service`:\n#{e.message}", e.backtrace
+              raise e, "Cannot load `Rails.config.active_storage.services`:\n#{e.message}", e.backtrace
             end
         end
       end

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-# Serves files stored with the disk service in the same way that the cloud services do.
+# Serves files stored with the disk services in the same way that the cloud services do.
 # This means using expiring, signed URLs that are meant for immediate access, not permanent linking.
 # Always go through the BlobsController, or your own authenticated controller, rather than directly
-# to the service url.
+# to the services url.
 class ActiveStorage::DiskController < ActiveStorage::BaseController
   skip_forgery_protection
 

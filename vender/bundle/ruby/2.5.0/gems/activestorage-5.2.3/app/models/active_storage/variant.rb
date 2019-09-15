@@ -9,7 +9,7 @@ require "active_storage/downloading"
 # Variants rely on {MiniMagick}[https://github.com/minimagick/minimagick] for the actual transformations
 # of the file, so you must add <tt>gem "mini_magick"</tt> to your Gemfile if you wish to use variants.
 #
-# Note that to create a variant it's necessary to download the entire blob file from the service and load it
+# Note that to create a variant it's necessary to download the entire blob file from the services and load it
 # into memory. The larger the image, the more memory is used. Because of this process, you also want to be
 # considerate about when the variant is actually processed. You shouldn't be processing variants inline in a
 # template, for example. Delay the processing to an on-demand controller, like the one provided in
@@ -24,13 +24,13 @@ require "active_storage/downloading"
 # can then produce on-demand.
 #
 # When you do want to actually produce the variant needed, call +processed+. This will check that the variant
-# has already been processed and uploaded to the service, and, if so, just return that. Otherwise it will perform
-# the transformations, upload the variant to the service, and return itself again. Example:
+# has already been processed and uploaded to the services, and, if so, just return that. Otherwise it will perform
+# the transformations, upload the variant to the services, and return itself again. Example:
 #
 #   avatar.variant(resize: "100x100").processed.service_url
 #
 # This will create and process a variant of the avatar blob that's constrained to a height and width of 100.
-# Then it'll upload said variant to the service according to a derivative key of the blob and the transformations.
+# Then it'll upload said variant to the services according to a derivative key of the blob and the transformations.
 #
 # A list of all possible transformations is available at https://www.imagemagick.org/script/mogrify.php. You can
 # combine as many as you like freely:
@@ -42,13 +42,13 @@ class ActiveStorage::Variant
   WEB_IMAGE_CONTENT_TYPES = %w( image/png image/jpeg image/jpg image/gif )
 
   attr_reader :blob, :variation
-  delegate :service, to: :blob
+  delegate :services, to: :blob
 
   def initialize(blob, variation_or_variation_key)
     @blob, @variation = blob, ActiveStorage::Variation.wrap(variation_or_variation_key)
   end
 
-  # Returns the variant instance itself after it's been processed or an existing processing has been found on the service.
+  # Returns the variant instance itself after it's been processed or an existing processing has been found on the services.
   def processed
     process unless processed?
     self
@@ -59,7 +59,7 @@ class ActiveStorage::Variant
     "variants/#{blob.key}/#{Digest::SHA256.hexdigest(variation.key)}"
   end
 
-  # Returns the URL of the variant on the service. This URL is intended to be short-lived for security and not used directly
+  # Returns the URL of the variant on the services. This URL is intended to be short-lived for security and not used directly
   # with users. Instead, the +service_url+ should only be exposed as a redirect from a stable, possibly authenticated URL.
   # Hiding the +service_url+ behind a redirect also gives you the power to change services without updating all URLs. And
   # it allows permanent URLs that redirect to the +service_url+ to be cached in the view.

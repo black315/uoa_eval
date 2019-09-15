@@ -39,7 +39,7 @@ module ActiveJob
       #    def perform(*args)
       #      # Might raise CustomAppException, AnotherCustomAppException, or YetAnotherCustomAppException for something domain specific
       #      # Might raise ActiveRecord::Deadlocked when a local db deadlock is detected
-      #      # Might raise Net::OpenTimeout when the remote service is down
+      #      # Might raise Net::OpenTimeout when the remote services is down
       #    end
       #  end
       def retry_on(exception, wait: 3.seconds, attempts: 5, queue: nil, priority: nil)

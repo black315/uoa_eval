@@ -5,7 +5,7 @@ require "azure/storage"
 require "azure/storage/core/auth/shared_access_signature"
 
 module ActiveStorage
-  # Wraps the Microsoft Azure Storage Blob Service as an Active Storage service.
+  # Wraps the Microsoft Azure Storage Blob Service as an Active Storage services.
   # See ActiveStorage::Service for the generic API documentation that applies to all services.
   class Service::AzureStorageService < Service
     attr_reader :client, :blobs, :container, :signer
@@ -84,12 +84,12 @@ module ActiveStorage
     def url(key, expires_in:, filename:, disposition:, content_type:)
       instrument :url, key: key do |payload|
         generated_url = signer.signed_uri(
-          uri_for(key), false,
-          service: "b",
-          permissions: "r",
-          expiry: format_expiry(expires_in),
-          content_disposition: content_disposition_with(type: disposition, filename: filename),
-          content_type: content_type
+            uri_for(key), false,
+            services: "b",
+            permissions: "r",
+            expiry: format_expiry(expires_in),
+            content_disposition: content_disposition_with(type: disposition, filename: filename),
+            content_type: content_type
         ).to_s
 
         payload[:url] = generated_url
@@ -101,10 +101,10 @@ module ActiveStorage
     def url_for_direct_upload(key, expires_in:, content_type:, content_length:, checksum:)
       instrument :url, key: key do |payload|
         generated_url = signer.signed_uri(
-          uri_for(key), false,
-          service: "b",
-          permissions: "rw",
-          expiry: format_expiry(expires_in)
+            uri_for(key), false,
+            services: "b",
+            permissions: "rw",
+            expiry: format_expiry(expires_in)
         ).to_s
 
         payload[:url] = generated_url
