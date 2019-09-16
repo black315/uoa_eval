@@ -1,4 +1,12 @@
 <h1><%= @subject.name %></h1>
+<div class="input-field">
+  <input type="hidden" name="href" value="/subjects/show/<%= @subject.id %>">
+  <select name="sort">
+    <option value="" disabled selected>並び順</option>
+    <option value="period">最近の授業</option>
+    <option value="rate">高評価</option>
+  </select>
+</div>
 <% @posts.each do |post| %>
   <div>
     <%= post.content %>
