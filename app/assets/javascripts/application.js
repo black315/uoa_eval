@@ -21,6 +21,14 @@ $(function() {
         $('select').formSelect();
     });
 
+    $('select[name="sort"]').change(function () {
+        const href = $(this).parents().find('input[name="href"]').val();
+        const keyword = $(this).parents().find('input[name="key"]').val();
+        const sort = $(this).val();
+        console.log(href);
+        location.href = keyword != null ? href + '?keyword=' + keyword + '&sort=' + sort : href + '?sort=' + sort;
+    });
+
     $('#new-subject, #new-post').click(function() {
         const $newForm = $(this).parent().next();
 

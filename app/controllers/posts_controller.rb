@@ -1,11 +1,7 @@
 class PostsController < ApplicationController
   def search
-    if params[:keyword]
-      @posts = Post.where('(content LIKE ?) OR (instructor LIKE ?)',
-                          "%#{params[:keyword]}%", "%#{params[:keyword]}%")
-    else
-      @posts = Post.all
-    end
+    @keyword = params[:keyword]
+    @posts = PostsService.search(params[:keyword], params[:sort])
   end
 
   def create

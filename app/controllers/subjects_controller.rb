@@ -7,7 +7,11 @@ class SubjectsController < ApplicationController
   def show
     @subject = Subject.find(params[:id])
     @newPost = Post.new(:subject_id => params[:id])
-    @posts = Post.where(subject_id: params[:id])
+    if params[:sort]
+      @posts = Post.where(subject_id: params[:id]).order("#{params[:sort]} DESC")
+    else
+      @posts = Post.where(subject_id: params[:id]).order(created_at: "DESC")
+    end
     @periodList = SubjectsService.getPeriodList()
   end
 

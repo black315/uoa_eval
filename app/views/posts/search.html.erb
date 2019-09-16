@@ -1,4 +1,13 @@
 <h1>検索結果</h1>
+<div class="input-field">
+  <%= hidden_field_tag 'key', @keyword %>
+  <input type="hidden" name="href" value="/posts/search">
+  <select name="sort">
+    <option value="" disabled selected>並び順</option>
+    <option value="period">最近の授業</option>
+    <option value="rate">高評価</option>
+  </select>
+</div>
 <ul>
   <% @posts.each do |post| %>
     <div>
