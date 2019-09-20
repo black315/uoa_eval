@@ -1,7 +1,11 @@
 <h1>科目一覧</h1>
 <ul>
   <% @subjects.each do |subject| %>
-    <li><%= link_to subject.name, subjects_show_path(subject.id), data: {"turbolinks" => false} %>
+    <div class="subject z-depth-3">
+      <div class="subject-content">
+        <li><%= link_to subject.name, subjects_show_path(subject.id), data: {"turbolinks" => false} %></li>
+      </div>
+    </div>
   <% end %>
 </ul>
 <div>

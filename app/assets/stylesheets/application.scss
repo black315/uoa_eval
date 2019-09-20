@@ -22,13 +22,3 @@ $secondary-color: color("light-blue", "lighten-2") !default;
 body {
   background-image: image-url("Portrait.jpg");
 }
-
-.post {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-}
-
-.post-content {
-  padding: 20px;
-}
