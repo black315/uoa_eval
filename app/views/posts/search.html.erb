@@ -16,9 +16,16 @@
           <%= post.content %>
         </div>
         <hr>
-        <div>担当者　<%= post.instructor %></div>
-        <div>投稿者　<%= post.period %>期 </div>
-        <div>評価　<%= post.rate %></div>
+        <div>
+          <div class="inline">担当者　<%= post.instructor %></div>
+          <div class="inline">投稿者　<%= post.period %>期</div>
+          <div class="inline">
+            評価　
+            <div class="star-ratings-sprite inline">
+              <span style="width:<%= post.rate %>%" class="star-ratings-sprite-rating"></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   <% end %>
