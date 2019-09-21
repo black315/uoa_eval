@@ -3,7 +3,7 @@
   <% @subjects.each do |subject| %>
     <div class="subject z-depth-3">
       <div class="subject-content">
-        <li><%= link_to subject.name, subjects_show_path(subject.id), data: {"turbolinks" => false} %></li>
+        <%= link_to subject.name, subjects_show_path(subject.id), data: {"turbolinks" => false} %>
       </div>
     </div>
   <% end %>
