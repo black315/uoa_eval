@@ -21,6 +21,19 @@ $secondary-color: color("light-blue", "lighten-2") !default;
 
 body {
   background-image: image-url("Portrait.jpg");
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.page-footer {
+  background-color: #424242;
+  padding: 20px;
 }
 
 .inline {
