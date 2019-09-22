@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UoaEval</title>
+    <title>Eval</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css?family=Norican&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,14 +14,14 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <div class="brand-logo center">
-            <%= link_to "Eval(uoa);", subjects_index_path, data: {"turbolinks" => false} %>
+          <div class="brand-logo center" style="font-family: 'Norican', cursive;">
+            <%= link_to "Eval", subjects_index_path, data: {"turbolinks" => false} %>
           </div>
           <ul class="right hide-on-med-and-down">
             <li>
           <form action="/posts/search" method="get">
             <div class="input-field">
-              <input id="keyword" name="keyword" type="search">
+              <input id="keyword" name="keyword" type="search" placeholder="全ての投稿を検索">
               <label class="label-icon" for="search"><i class="material-icons">search</i></label>
               <i class="material-icons">close</i>
             </div>

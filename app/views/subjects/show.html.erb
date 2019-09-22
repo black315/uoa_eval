@@ -8,12 +8,24 @@
   </select>
 </div>
 <% @posts.each do |post| %>
-  <div>
-    <%= post.content %>
+  <div class="post z-depth-3">
+    <div class="post-content">
+      <div>
+        <%= post.content %>
+      </div>
+      <hr>
+      <div>
+        <div class="inline">担当者　<%= post.instructor %></div>
+        <div class="inline">投稿者　<%= post.period %>期</div>
+        <div class="inline">
+          評価　
+          <div class="star-ratings-sprite inline">
+            <span style="width:<%= post.rate %>%" class="star-ratings-sprite-rating"></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div>担当者　<%= post.instructor %></div>
-  <div>投稿者　<%= post.period %>期 </div>
-  <div>評価　<%= post.rate %></div>
 <% end %>
 <div>
   <input type="button" id="new-post" class="waves-effect waves-light btn" value="投稿する" />
@@ -28,7 +40,7 @@
       <label>期</label>
     </div>
     <div class="input-field col s12">
-      <%= f.select :rate, [[5, 5], [4, 4], [3, 3], [2, 2], [1, 1]], :prompt => "選択してください" %>
+      <%= f.select :rate, [[5, 100], [4, 80], [3, 60], [2, 40], [1, 20]], :prompt => "選択してください" %>
       <label>評価</label>
     </div>
     <%= f.hidden_field :subject_id %>
