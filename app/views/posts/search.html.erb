@@ -5,13 +5,16 @@
   <select name="sort">
     <option value="" disabled selected>並び順</option>
     <option value="period">最近の授業</option>
-    <option value="rate">高評価</option>
+    <option value="rate">評価が高い順</option>
   </select>
 </div>
 <ul>
   <% @posts.each do |post| %>
     <div class="post z-depth-3">
       <div class="post-content">
+        <div class="chip z-depth-1">
+          <%= post.subject.name %>
+        </div>
         <div>
           <%= post.content %>
         </div>
