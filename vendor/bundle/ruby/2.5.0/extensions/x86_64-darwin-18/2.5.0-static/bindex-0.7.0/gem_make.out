@@ -1,0 +1,15 @@
+current directory: /Users/ryou/Documents/Programming/eval_uoa/uoa_eval/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/ryou/.rbenv/versions/2.5.1/bin/ruby -I /Users/ryou/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20190922-36649-porr79.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ryou/Documents/Programming/eval_uoa/uoa_eval/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/ryou/Documents/Programming/eval_uoa/uoa_eval/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/ryou/Documents/Programming/eval_uoa/uoa_eval/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190922-36649-f24vbb/skiptrace
