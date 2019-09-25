@@ -29,6 +29,10 @@ $(function() {
         location.href = keyword != null ? href + '?keyword=' + keyword + '&sort=' + sort : href + '?sort=' + sort;
     });
 
+    $('.subject-content').click(function() {
+        location.href = $(this).find('a').attr('href');
+    });
+
     $('#new-subject, #new-post').click(function() {
         const $newForm = $(this).parent().next();
 

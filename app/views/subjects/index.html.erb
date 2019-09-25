@@ -12,6 +12,7 @@
   <input type="button" id="new-subject" class="waves-effect waves-light btn" value="投稿する" />
   <div class="new-subject-form" style="display: none">
   <%= form_for @newSubject, :url => {:action => 'create'} do |f| %>
+    <label>科目名</label>
     <%= f.text_field :name %>
     <%= f.submit "科目追加", :class => "waves-effect waves-light btn" %>
   <% end %>
