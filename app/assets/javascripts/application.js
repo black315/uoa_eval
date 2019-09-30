@@ -34,12 +34,12 @@ $(function() {
     });
 
     $('#new-subject, #new-post').click(function() {
-        const $newForm = $(this).parent().next();
+        const $newForm = $('.new-form');
 
         if($newForm.is(':hidden')) {
             $(this).val('キャンセル');
         } else {
-            $(this).val('投稿する');
+            $(this).val('追加する');
         }
 
         $newForm.toggle('slow');
