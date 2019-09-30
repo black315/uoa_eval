@@ -1,4 +1,29 @@
 <h1><%= @subject.name %></h1>
+<div>
+  <div class="row">
+    <div class="right">
+        <input type="button" id="new-post" class="waves-effect waves-light btn" value="追加する" />
+    </div>
+  </div>
+  <div class="new-form" style="display: none">
+  <%= form_for @newPost, :url => post_create_path do |f| %>
+    <label>内容</label>
+    <%= f.text_area :content %>
+    <label>担当者</label>
+    <%= f.text_field :instructor %>
+    <div class="input-field col s12">
+      <%= f.select :period, @periodList.map { |period| [period, period] }, :prompt => "選択してください" %>
+      <label>期</label>
+    </div>
+    <div class="input-field col s12">
+      <%= f.select :rate, [[5, 100], [4, 80], [3, 60], [2, 40], [1, 20]], :prompt => "選択してください" %>
+      <label>評価</label>
+    </div>
+    <%= f.hidden_field :subject_id %>
+    <%= f.submit "追加", :class => "waves-effect waves-light btn" %>
+  <% end %>
+  </div>
+</div>
 <div class="input-field">
   <input type="hidden" name="href" value="/subjects/show/<%= @subject.id %>">
   <select name="sort">
@@ -27,24 +52,3 @@
     </div>
   </div>
 <% end %>
-<div>
-  <input type="button" id="new-post" class="waves-effect waves-light btn" value="投稿する" />
-  <div class="new-post-form" style="display: none">
-  <%= form_for @newPost, :url => post_create_path do |f| %>
-    <label>内容</label>
-    <%= f.text_area :content %>
-    <label>担当者</label>
-    <%= f.text_field :instructor %>
-    <div class="input-field col s12">
-      <%= f.select :period, @periodList.map { |period| [period, period] }, :prompt => "選択してください" %>
-      <label>期</label>
-    </div>
-    <div class="input-field col s12">
-      <%= f.select :rate, [[5, 100], [4, 80], [3, 60], [2, 40], [1, 20]], :prompt => "選択してください" %>
-      <label>評価</label>
-    </div>
-    <%= f.hidden_field :subject_id %>
-    <%= f.submit "投稿", :class => "waves-effect waves-light btn" %>
-  <% end %>
-  </div>
-</div>
