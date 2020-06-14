@@ -10,7 +10,7 @@ gem 'sqlite3', group: :development
 # Use postgresql to deploy
 gem 'pg', group: :production
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 # Use SCSS for stylesheets
 gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
